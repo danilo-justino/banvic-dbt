@@ -1,0 +1,11 @@
+
+sources:
+  - name: erp
+    description: Esse é o sisterma ERP da Banvic com dados de clientes, colaboradores, contas e transações.
+    schema: erp_banvic
+    tables:
+      - name: localidades
+        description: Tabela fonte de localidade com informação de cidade e estado.
+
+      - name: clientes
+        description: Tabela fonte de clientes com informações pessoais de cada cliente da Baanvic.
