@@ -6,21 +6,100 @@ sources:
     tables:
       - name: localidades
         description: Tabela fonte de localidade com informação de cidade e estado.
+        columns:
+          - name: cod_localidade
+            description: Chave primaria da Tabela Localidades.
+            data_tests:
+              - unique
+              - not_null
+              
 
       - name: clientes
         description: Tabela fonte de clientes com informações pessoais de cada cliente da Banvic.
+        columns:
+          - name: cod_cliente
+            description: Chave primária da tabela cleintes.
+            data_tests:
+              - unique
+              - not_null
+              
+              
+
 
       - name: colaboradores
         description: Tabela fonte dos colaboradores com informações pessoais de cada colaborador da Banvic.
+        columns:
+          - name: cod_colaborador
+            description: Chave primária da tabela colaboradores.
+            data_tests:
+              - unique
+              - not_null
+              
       
       - name: agencias
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+        columns:
+          - name: cod_agencia
+            description: Chave primária da tabela agencias
+            data_tests:
+              - unique
+              - not_null
+              
 
       - name: contas
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+        columns:
+          - name: cod_conta
+            description: Chave primária da tabela contas.
+            data_tests:
+              - unique
+              - not_null
+              
 
       - name:  transacoes
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+        columns:
+          - name: cod_transacao
+            description: Chave primária da tabela transacoes.
+            data_tests:
+              - unique
+              - not_null
+              
 
       - name: propostas_credito
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+        columns:
+          - name: cod_proposta
+
+Save
+
+65666768697071727374757677
+Find
+
+No results
+
+dbt Wizard
+Commands
+Problems
+2
+Code quality
+Lineage$0
+
+Save
+
+65666768697071727374757677
+Find
+
+No results
+
+dbt Wizard
+Commands
+Problems
+2
+Code quality
+Lineage$0
+            description: Chave primária da tabela prosposta de crédito.
+            data_tests:
+              - unique
+              - not_null
+              
