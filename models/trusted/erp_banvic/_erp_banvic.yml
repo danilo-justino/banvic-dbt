@@ -15,3 +15,12 @@ sources:
       
       - name: agencias
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+
+      - name: contas
+        description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+
+      - name:  transacoes
+        description: Tabela fonte das agencias com informações de cada agencia da Banvic.
+
+      - name: propostas_credito
+        description: Tabela fonte das agencias com informações de cada agencia da Banvic.
