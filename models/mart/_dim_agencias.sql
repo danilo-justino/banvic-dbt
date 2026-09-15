@@ -1,8 +1,8 @@
 with
-    colaboradores as(
+    agencias as(
         select *
-        from {{ ref('rfd_dimensao_colaboradores') }}
+        from {{ ref('rfd_dimensao_agencias') }}
     )
 
 select *
-from colaboradores
+from agencias
