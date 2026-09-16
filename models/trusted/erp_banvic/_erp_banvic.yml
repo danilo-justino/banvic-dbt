@@ -68,38 +68,4 @@ sources:
 
       - name: propostas_credito
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
-        columns:
-          - name: cod_proposta
-
-Save
-
-65666768697071727374757677
-Find
-
-No results
-
-dbt Wizard
-Commands
-Problems
-2
-Code quality
-Lineage$0
-
-Save
-
-65666768697071727374757677
-Find
-
-No results
-
-dbt Wizard
-Commands
-Problems
-2
-Code quality
-Lineage$0
-            description: Chave primária da tabela prosposta de crédito.
-            data_tests:
-              - unique
-              - not_null
-              
+        
