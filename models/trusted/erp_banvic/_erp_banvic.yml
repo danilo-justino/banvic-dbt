@@ -68,4 +68,12 @@ sources:
 
       - name: propostas_credito
         description: Tabela fonte das agencias com informações de cada agencia da Banvic.
-        
+      
+      - name: colaborador_agencia
+        data_tests:
+          - dbt_utils.unique_combination_of_columns:
+              arguments:
+                combination_of_columns:
+                  - cod_colaborador
+                  - cod_agencia
+
