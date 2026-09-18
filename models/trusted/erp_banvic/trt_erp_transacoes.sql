@@ -8,9 +8,15 @@ with
         select
             Cast(cod_transacao as int) as pk_transacao
             , cast(num_conta as int) as fk_conta
-            , cast(data_transacao as timestamp) as ts_data_transacao
+            , cast(data_transacao as date) as data_transacao
+            , cast(data_transacao as timestamp) as ts_transacao
             , nome_transacao
-            , cast(valor_transacao as numeric(32, 2)) as valor_transacao
+            , case
+                when cast(valor_transacao as numeric(28, 2))  > 0 then 'Crédito'
+                when cast(valor_transacao as numeric(28, 2)) < 0 then 'Débito'
+                else null
+             end as tipo_transacao 
+            , cast(valor_transacao as numeric(28, 2)) as valor_transacao
         from fonte_transacoes
     )
 
