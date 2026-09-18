@@ -10,6 +10,7 @@ with
             , cast(cod_cliente as int) as fk_cliente
             , cast(cod_agencia as int) as fk_agencia
             , cast(cod_colaborador as int) as fk_colaborador
+            , cast(num_conta as int) as numero_conta
             , tipo_conta
             , cast(data_abertura as timestamp) as ts_abertura_conta
             , cast(saldo_total as numeric(32,2)) as saldo_total
